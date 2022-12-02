@@ -2,13 +2,13 @@ import CrudForm from '../components/CrudForm';
 import CrudTable from '../components/CrudTable';
 
 
-const CrudMovies = ({props}) => {
+const CrudMovies = ({data}) => {
  
 
   return (
     <>
       <CrudForm />
-      <CrudTable />
+      <CrudTable data={data}/>
     </>
   );
 };

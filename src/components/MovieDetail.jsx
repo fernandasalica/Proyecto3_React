@@ -6,30 +6,31 @@ import NextPremieres from './NextPremieres';
 const MovieDetail = ({data}) => {
   return (
     <Container>
-        <h2 className='mt-2'>Nombre de pelicula</h2>
+        <h2 className='mt-4'>{data.name}</h2>
         <hr></hr>
         <Row>
           <div className="width-col">
               <Col  className="d-flex justify-content-start">
-                <img src={data.image} className='image-movie'></img></Col>
+                <img src={data.image}></img></Col>
               <Col>
                 <div className='d-block justify-content-start mt-2'>
-                  <p>Categoría:</p>
-                  <p>Año:</p>
-                  <p>Dirigida por:</p>
-                  <p>Reparto:</p>
+                  <p><b>Categoría</b>: {data.category}</p>
+                  <p><b>Año:</b> {data.year}</p>
+                  <p><b>Dirigida por:</b> {data.directedby}</p>
+                  <p><b>Reparto:</b> {data.actors}</p>
                 </div>
               </Col>
               <Col>
                 <Ratio aspectRatio="16x9">
-                  <embed type="image/svg+xml" src="https://www.youtube.com/embed/watch?v=Sm6_rlrIKXw" />
+                  <embed type="image/svg+xml" src={data.trailer} />
                 </Ratio>
               </Col>
             </div>
         </Row>
         <h4 className='mt-5'>Argumento</h4>
         <hr></hr>
-        <p className="mb-5">{data.description}</p>
+        <p className="mb-5">{data.story}</p>
+        <hr />
         <NextPremieres />
     </Container>
   );

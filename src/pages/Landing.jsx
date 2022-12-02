@@ -3,7 +3,6 @@ import Category from "../components/Category";
 import Hero from "../components/Hero";
 import ListMoviesContainer from "../components/ListMoviesContainer";
 import NextPremieres from '../components/NextPremieres';
-// import CrudMovies from './CrudMovies';
 
 const Landing = () => {
   return (
@@ -13,7 +12,6 @@ const Landing = () => {
       <Advertising />
       <Category />
       <NextPremieres />
-      {/* <CrudMovies /> */}
  </>
   )
 }

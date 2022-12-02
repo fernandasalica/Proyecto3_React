@@ -12,6 +12,7 @@ import AboutUs from "./AboutUs";
 import Navbar2 from "../components/Navbar2";
 import MovieDetailContainer from "../components/MovieDetailContainer";
 import ListCategoryContainer from "../components/ListCategoryContainer";
+import ListMoviesTableContainer from "../components/ListMoviesTableContainer";
 
 const Main = ({ auth, validate, login, logout, loggedIn }) => {
   return (
@@ -37,6 +38,7 @@ const Main = ({ auth, validate, login, logout, loggedIn }) => {
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/MovieDetailContainer/:id" element={<MovieDetailContainer />} />
           <Route path="/ListCategoryContainer/:category" element={<ListCategoryContainer />}/>
+          <Route path="/ListMoviesTableContainer" element={<ListMoviesTableContainer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

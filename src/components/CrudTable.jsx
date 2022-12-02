@@ -1,17 +1,8 @@
 import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
-import React, {useState, useEffect } from 'react';
 import CrudRow from './CrudRow';
 
-const CrudTable = () => {
-
-  const [data, setData] = useState([]);
-
-    useEffect(() => {
-      fetch('https://fakestoreapi.com/products')
-        .then(res => res.json())
-        .then(json => setData(json));
-    }, []);
+const CrudTable = ({data}) => {
 
   return (
     <Container>
@@ -28,12 +19,12 @@ const CrudTable = () => {
             </tr>
         </thead>
         <tbody>
-        {console.log('datos'+data)}
-        {/* {data.map((d, i) => (
+        {/* {console.log('datos de pelis'+data)} */}
+        {data.map((d, i) => (
             <CrudRow d={d} key={'Movie' + i} />
               
         ))}
-             */}
+            
               {/* <tr>
               <td>2</td>
               <td>Jacob</td>

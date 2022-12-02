@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Pagination from 'react-bootstrap/Pagination';
 import Movie from './Movie';
-import Col from 'react-bootstrap/Col';
 
 let active = 2;
 let items = [];

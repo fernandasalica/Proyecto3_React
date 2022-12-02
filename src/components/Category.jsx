@@ -18,7 +18,8 @@ const Category = () => {
                             <Card.Img variant="top" src="./img/slider1.jpg" />
                             <Card.Body>
                             <Link to='/ListCategoryContainer/Comedia'>
-                                <Card.Title>Comedias</Card.Title></Link>    
+                                <Card.Title>Comedias</Card.Title>
+                            </Link>    
                             </Card.Body>
                         </Card>
                     </Col>
@@ -26,7 +27,9 @@ const Category = () => {
                         <Card style={{ width: '15rem' }}>
                             <Card.Img variant="top" src="./img/slider2.jpg" />
                             <Card.Body>
+                            <Link to='/ListCategoryContainer/Acción'>   
                                 <Card.Title>Acción</Card.Title>
+                            </Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -34,7 +37,9 @@ const Category = () => {
                         <Card style={{ width: '15rem' }}>
                             <Card.Img variant="top" src="./img/slider3.jpg" />
                             <Card.Body>
+                            <Link to='/ListCategoryContainer/Drama'>  
                                 <Card.Title>Drama</Card.Title>
+                            </Link>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -42,7 +47,9 @@ const Category = () => {
                         <Card style={{ width: '15rem' }}>
                             <Card.Img variant="top" src="./img/slider1.jpg" />
                             <Card.Body>
-                                <Card.Title>Ciencia Ficción</Card.Title>
+                            <Link to='/ListCategoryContainer/Suspenso'>
+                                <Card.Title>Suspenso</Card.Title>
+                            </Link>
                             </Card.Body>
                         </Card>
                     </Col>

@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import ListMovie from './ListMovie';
+import CrudMovies from '../pages/CrudMovies';
 
 const ListMoviesContainer = () => {
     const [data, setData] = useState([]);
@@ -8,9 +8,9 @@ const ListMoviesContainer = () => {
         .then(res => res.json())
         .then(json => setData(json));
     }, []);
-
+  console.log('datos para tabla'+data)
   return (
-    <ListMovie data={data} />
+    <CrudMovies data={data} />
   );
 };
 

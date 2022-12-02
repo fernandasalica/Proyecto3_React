@@ -20,7 +20,6 @@ const Movie = ({ d }) => {
                     <Row>
                         <Col>
                             <i className="fa-solid fa-star"></i>
-                            <span className="p-1">1</span>
                         </Col>
                         <Col>
                             <Link to="/">  

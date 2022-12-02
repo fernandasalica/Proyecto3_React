@@ -23,7 +23,7 @@ const Login = ({ show, handleClose, handleShowSignUp, auth, validate, login, log
       setUserName('');
       setPassword('');
       handleClose();
-      navigate ("/Contact")
+      navigate ("/ListMoviesTableContainer")
       toast('bienvenido ' + userName)
     }
   };
